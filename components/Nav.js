@@ -10,7 +10,7 @@ const Nav = () => {
       <ul>
         <li className={navStyles.logo}>
           <a href='/'>
-          <Image src= { LAlogo } height={20} width={90}/>
+          <Image src= { LAlogo } alt='logo' height={20} width={90}/>
           </a>
         </li>
         <li>

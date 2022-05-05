@@ -5,11 +5,9 @@ import Styles from '../styles/Home.module.css'
 
 const cards = (props) => {
   const eachCard = props.cards.map((card, i) =>
-  <div>
     <div key={i}>
       <DisplayCardSet card={card} />
     </div>
-  </div>
   )
   return (
     <div className={Styles.contentCardContainer}>

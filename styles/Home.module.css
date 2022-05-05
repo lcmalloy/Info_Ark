@@ -47,7 +47,10 @@
 .page_logo {
   display: flex;
   justify-content: center;
-  margin-top:6%
+  margin-top:6%;
+  margin-bottom: 6%;
+  height: 198%;
+  width: 98%
 }
 
 .classContainer {
@@ -106,4 +109,15 @@
   color: white;
   overflow-y: scroll;
   height: 500px;
+}
+
+.video {
+  width: 77%;
+  height: 40%
+}
+
+.parentContainer {
+  height: 100%;
+  width: 100%;
+  display: flex;
 }
