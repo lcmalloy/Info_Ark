@@ -59,9 +59,19 @@ function subscribe() {
     }
 
   return (
-    <div className={Styles.parentContainer}>
+    <>
+    <div className="Header">
+      <div className="page_text" style={{'font-size': 28 + 'px'}}>
+        Submission Form
+      </div>
+      <div className="Header-body">
+        Please subscribe to receive latests <br></br>
+        news and updates!
+      </div>
+    </div>
+    <div className={Styles.parentContainer} style={{'display': 'flex', 'justify-content': 'center'}}>
       <form className={Styles.registForm}>
-        { submitted && valid ? <div className={Styles.success}> Success! Thanks for subscribing </div> : <> </> }
+        { submitted && valid ? <div className={Styles.success} > Success! Thanks for subscribing </div> : <> </> }
         { submitted && !values.firstName ? <span className={Styles.error}>Please enter a first name </span> : null }
         <input
           className={Styles.formField}
@@ -87,9 +97,9 @@ function subscribe() {
           onClick={handleSubmit}>
           Submit
         </button>
-
       </form>
     </div>
+    </>
   )
 }
 
