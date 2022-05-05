@@ -1,0 +1,36 @@
+.collapsible {
+  padding: 6px;
+}
+
+.collapsible .header {
+  background-color: #34495e;
+  padding: 6px;
+  cursor: pointer;
+
+}
+
+.content {
+  background-color: rgb(42, 44, 46);
+  border-radius: 8px;
+}
+
+.content1 {
+  background-color: rgb(42, 44, 46);
+  border-radius: 8px;
+  height: 230px;
+}
+
+.eachItem {
+  height: 25px;
+  padding-top: 14px;
+  padding-left: 20px
+}
+
+.resistance1 {
+  padding-top: 15px;
+  margin-left: 10px;
+}
+
+.resistance2 {
+  margin-left: 10px
+}

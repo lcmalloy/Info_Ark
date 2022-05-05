@@ -1,0 +1,19 @@
+.collapsible .content {
+  padding: 6px;
+  background-color:#787e89;
+}
+
+.collapsible .header {
+  background-color: #34495e;
+  padding: 6px;
+  cursor: pointer;
+
+}
+
+.npcDescription {
+  margin-left: 6px;
+}
+
+.craftDescription {
+  margin-left: 6px;
+}
