@@ -6,6 +6,6 @@ const subscriptionSchema = new mongoose.Schema({
   email: {type: String},
 });
 
-const Subscription = mongoose.model('Subscription', subscriptionSchema);
+const Subscription = mongoose.models.Subscription || mongoose.model('Subscription', subscriptionSchema);
 
 module.exports = Subscription;

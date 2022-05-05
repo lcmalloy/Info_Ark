@@ -2,6 +2,7 @@ import Head from 'next/head'
 import nextConfig from '../next.config'
 import DisplayClasses from '../components/DisplayClasses'
 import Styles from '../styles/Home.module.css'
+
 const Classes = ( props ) => {
 
   const eachClass = props.charClass.map((selectClass, i) =>

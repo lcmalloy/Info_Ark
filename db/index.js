@@ -7,9 +7,10 @@ const db = mongoose.connect(mongoURI, {
 
   db
   .then(db => console.log(`Connected to: ${mongoURI}`))
-  .catch(err -> {
+  .catch(err => {
     console.log(`There was a problem connection to mongo at: ${mongoURI}`);
     console.log(err);
   });
+
 
   module.exports = db;
