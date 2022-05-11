@@ -2,9 +2,12 @@ import Head from 'next/head'
 import nextConfig from '../next.config'
 import DisplayCardSet from '../components/DisplayCardSet'
 import Styles from '../styles/Home.module.css'
+import React, {useEffect, useState} from 'react'
 
 const cards = (props) => {
-  const eachCard = props.cards.map((card, i) =>
+  const [search, setSearch] = useState('')
+  const data = props.cards.filter(word => word.name.toLowerCase().includes(search));
+  const eachCard = data.map((card, i) =>
     <div key={i}>
       <DisplayCardSet card={card} />
     </div>
@@ -15,6 +18,13 @@ const cards = (props) => {
         <title>Lost Ark - Cards</title>
       </Head>
       <h1 className='page_text'>Card Collection</h1>
+      <div className={Styles.search}>
+        <input
+          type="text"
+          placeholder="Filter selection..."
+          onChange={(e) => setSearch(e.target.value)}
+        />
+      </div>
       <div className={Styles.cardContainer}>
         {eachCard}
       </div>
